@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="col 1" max_length="20" name="col_1" type="string"/>
+        <element label="new field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element label="New Row1" max_length="40" name="new_row1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Human resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="Accounting" sequence="3" value="Acct"/>
+            </choice>
+        </element>
+        <element label="Requested For" mandatory="true" max_length="32" name="u_requsted_for" reference="sys_user" type="reference"/>
+        <element label="When Needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" mandatory="true" max_length="40" name="w_what_needed" type="string">
+            <choice>
+                <element label="Human resources 1" sequence="0" value="hr1"/>
+                <element label="Human resources 2" sequence="1" value="Human resources 2"/>
+                <element label="Legal 1" sequence="2" value="legal1"/>
+                <element label="Legal 2" sequence="3" value="legal2"/>
+                <element label="Facilities 1" sequence="4" value="facilities1"/>
+                <element label="Facilities 2" sequence="5" value="facilities 2"/>
+                <element label="Accounting 1" sequence="6" value="acct1"/>
+                <element label="Accounting 2" sequence="7" value="acct2"/>
+            </choice>
+        </element>
+    </element>
+</database>
