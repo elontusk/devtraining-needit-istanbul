@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="needit_staging" max_length="40" name="x_58872_needit_needit_staging" type="collection">
+        <element attributes="import_attribute_name=Layer,edge_encryption_enabled=true" label="Layer" max_length="40" name="u_layer" type="string"/>
+        <element attributes="import_attribute_name=Mid X,edge_encryption_enabled=true" label="Mid X" max_length="40" name="u_mid_x" type="string"/>
+        <element attributes="import_attribute_name=Mid Y,edge_encryption_enabled=true" label="Mid Y" max_length="40" name="u_mid_y" type="string"/>
+        <element attributes="import_attribute_name=Ref Designator,edge_encryption_enabled=true" label="Ref Designator" max_length="40" name="u_ref_designator" type="string"/>
+        <element attributes="import_attribute_name=Rotation" label="Rotation" max_length="40" name="u_rotation" type="integer"/>
+    </element>
+</database>
